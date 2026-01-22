@@ -1,162 +1,76 @@
-Absolutely — I’ve got you.
-Below is a **clean, professional, copy-paste ready README** written exactly the way **professors, recruiters, and GitHub reviewers** expect. It’s based directly on your project report .
+# 📁 File Management System
 
----
-
-```md
-# File Management System
-
-A web-based **File Management System** developed as an academic course design project for  
-**Information Management System Design Practice** at **Hubei University of Technology**.
-
-This system enables secure storage, organization, and management of digital documents within an organization using a role-based access control mechanism.
+A **web-based File Management System** developed using **PHP and MySQL**, designed to store, manage, and organize documents efficiently.
+This project was created for **academic and educational purposes** as part of an undergraduate course project.
 
 ---
 
 ## 📌 Project Overview
 
-The File Management System is designed to help organizations centrally manage documents with controlled access.  
-Files are uploaded, stored, listed, downloaded, and deleted through a web-based interface.  
-The system supports two user roles: **Administrator** and **Normal User**.
+The File Management System allows users to upload, view, download, and delete files in a centralized environment.
+An administrator manages users and oversees file records, while normal users can manage their own documents.
 
 ---
 
-## 🛠️ Technologies Used
+## ⚙️ Technologies Used
 
-- **Backend:** PHP (MySQLi)
-- **Database:** MySQL
-- **Frontend:** HTML5, CSS3
-- **Client-side Scripting:** JavaScript, AJAX, jQuery
-- **Server Environment:** Apache (XAMPP / WAMP recommended)
+* **Backend:** PHP
+* **Database:** MySQL
+* **Frontend:** HTML, CSS, JavaScript
+* **Platform:** Web-based
 
 ---
 
-## 👥 User Roles
+## 📂 Project Structure
 
-### Administrator
-- Register new users
-- View all users
-- Add, view, and delete files
-- Manage user information
-- Monitor system records
-
-### Normal User
-- Upload files
-- View available files
-- Download files
-- Delete own uploaded files
+```
+File-Management-System/
+│
+├── File_Management_System_Report.pdf   # Project documentation
+├── database.sql                         # MySQL database file
+└── source_code/                         # Main project files (PHP, HTML, CSS, JS)
+```
 
 ---
 
 ## ✨ Key Features
 
-- Secure login and authentication
-- Role-based access control
-- File upload and download functionality
-- File metadata management (type, size, date)
-- Admin dashboard for user and file management
-- User-friendly graphical interface
-- Data protection through encrypted password storage
+* User authentication (Admin & User)
+* File upload and download
+* File deletion
+* Admin-controlled user management
+* Secure password handling
+* Simple and intuitive interface
 
 ---
 
-## 🗂️ System Modules
-
-- User Registration & Authentication
-- File Upload Module
-- File Listing & Download Module
-- File Deletion Module
-- User Management Module
-- Admin Dashboard
-
----
-
-## 🧪 Testing
-
-The system was tested using:
-- **Unit Testing** – Individual modules (user registration, file upload)
-- **Integration Testing** – User login and dashboard operations
-- **System Testing** – Complete system functionality in a local server environment
-
----
-
-## 📄 Documentation
-
-Complete project documentation and design report are available in:
-
-```
-
-File Management System.pdf
-
-```
-
----
-
-## 🎓 Academic Information
-
-- **Student Name:** Md Fahim Muntasir  
-- **Student ID:** 1911521213  
-- **Course:** Information Management System Design Practice  
-- **University:** Hubei University of Technology  
-- **Department:** Computer Science and Technology  
-- **Year:** 2022  
-
----
-
-## 🚀 Installation (Optional)
+## ▶️ How to Run
 
 1. Install **XAMPP / WAMP**
-2. Place the project folder inside:
-```
-
-htdocs/
-
-```
-3. Create a MySQL database and import the provided `.sql` file
-4. Configure database credentials in:
-```
-
-db_connect.php
+2. Copy the project folder to `htdocs`
+3. Import `database.sql` into MySQL
+4. Configure database credentials in the main PHP files
+5. Start Apache and MySQL
+6. Open in browser:
 
 ```
-5. Run the project via:
+http://localhost/File-Management-System
 ```
 
-[http://localhost/project-folder-name](http://localhost/project-folder-name)
+---
 
-```
+## 🏫 Academic Information
+
+* **Course:** Information Management System Design Practice
+* **University:** Hubei University of Technology
+* **Student Name:** Muntasir Md Fahim (王一然)
+* **Student ID:** 1911521213
 
 ---
 
 ## 📜 License
 
-This project is developed for **academic and educational purposes** only.  
-Free to use, modify, and extend with proper attribution.  
-Not intended for commercial use.
+This project was developed for **academic and educational purposes**.
+It may be used, modified, and extended for learning and non-commercial use, with **proper attribution** to the original author.
 
 ---
-
-## 📬 Contact
-
-**Md Fahim Muntasir**  
-Computer Science & Technology  
-Hubei University of Technology
-```
-
----
-
-### ✅ How to use it
-
-1. Open your GitHub repo
-2. Click **README.md**
-3. Paste everything above
-4. Commit → Done 🎉
-
-If you want, I can:
-
-* shorten it
-* make it more **research-oriented**
-* tailor it for **job portfolio**
-* or convert it into **multiple project READMEs** like your other repos
-
-Just say the word 👍
