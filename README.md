@@ -1,76 +1,79 @@
-# 📁 File Management System
+# File Management System — PHP & MySQL
 
-A **web-based File Management System** developed using **PHP and MySQL**, designed to store, manage, and organize documents efficiently.
-This project was created for **academic and educational purposes** as part of an undergraduate course project.
+**Information Management System Design Practice | Undergraduate Coursework**
 
----
+This repository documents a web-based **File Management System** prepared for an undergraduate course at **Hubei University of Technology**. It brings together the PHP application files, a MySQL/MariaDB database export, and the academic project report.
 
-## 📌 Project Overview
+The project explores how a database-backed web application can organize files and folders, support user accounts, and provide basic file-sharing workflows.
 
-The File Management System allows users to upload, view, download, and delete files in a centralized environment.
-An administrator manages users and oversees file records, while normal users can manage their own documents.
+## Project Overview
 
----
+The included source code provides interfaces and backend operations for:
 
-## ⚙️ Technologies Used
+- **User accounts:** Login and user administration, with administrator and regular-user roles.
+- **Files:** Upload, list, rename, download, and delete files.
+- **Folders:** Create, rename, and delete folders.
+- **Organization:** Browse folders and search visible file and folder names.
+- **Sharing:** Mark uploaded files as public for display in the shared-files view.
+- **Dashboard:** Display basic counts of users and files.
 
-* **Backend:** PHP
-* **Database:** MySQL
-* **Frontend:** HTML, CSS, JavaScript
-* **Platform:** Web-based
+These features are described from the repository's source code; they have **not been independently tested as a running deployment**.
 
----
+## Technology Stack
 
-## 📂 Project Structure
+| Area | Technologies |
+| --- | --- |
+| Backend | PHP, MySQLi |
+| Database | MySQL / MariaDB |
+| Frontend | HTML, CSS, JavaScript, jQuery |
+| Interface components | Bootstrap, DataTables, Font Awesome |
+| Local development environment | Apache and MySQL/MariaDB (for example, XAMPP or WAMP) |
 
-```
+## Repository Structure
+
+```text
 File-Management-System/
-│
-├── File_Management_System_Report.pdf   # Project documentation
-├── database.sql                         # MySQL database file
-└── source_code/                         # Main project files (PHP, HTML, CSS, JS)
+├── README.md
+├── File Management System.pdf     # Academic project report
+├── database/
+│   └── fms_db.sql                 # Database schema and sample records
+└── source code/
+    ├── index.php                  # Main application entry
+    ├── login.php                  # Login interface
+    ├── admin_class.php            # Application actions
+    ├── ajax.php                   # Action requests
+    ├── db_connect.php             # Database connection
+    ├── files.php                  # File and folder listing
+    ├── download.php               # File download handler
+    ├── users.php                  # User administration
+    └── assets/                    # Styles, scripts, libraries, uploads
 ```
 
----
+The `source code/` directory also contains additional PHP views and forms for managing files, folders, and users.
 
-## ✨ Key Features
+## Local Setup (Legacy Project)
 
-* User authentication (Admin & User)
-* File upload and download
-* File deletion
-* Admin-controlled user management
-* Secure password handling
-* Simple and intuitive interface
+1. Install a local PHP/Apache and MySQL/MariaDB environment, such as XAMPP or WAMP.
+2. Place the **contents** of `source code/` in a web-accessible local folder, for example `htdocs/file-management-system/`.
+3. Create a database named `fms_db` and import `database/fms_db.sql` through phpMyAdmin or a compatible SQL client.
+4. Adjust the local database configuration in `db_connect.php` to match your environment.
+5. Start Apache and the database server, then visit `http://localhost/file-management-system/login.php`.
 
----
+**Compatibility note:** The repository preserves a legacy academic implementation. Some included frontend assets may need correction or replacement for a successful run in a modern development environment. The application has not been verified on current PHP versions.
 
-## ▶️ How to Run
+**Security note:** The original implementation does not meet current security expectations for password storage, SQL query handling, or file-access authorization. Run it only in a controlled local environment for coursework or learning; do not expose it to the public internet without updating and reviewing those areas.
 
-1. Install **XAMPP / WAMP**
-2. Copy the project folder to `htdocs`
-3. Import `database.sql` into MySQL
-4. Configure database credentials in the main PHP files
-5. Start Apache and MySQL
-6. Open in browser:
+## Academic Documentation
 
-```
-http://localhost/File-Management-System
-```
+- **Course:** Information Management System Design Practice
+- **Institution:** Hubei University of Technology
+- **Student:** Muntasir Md Fahim (王一然)
+- **Report:** [File Management System — Academic Report](File%20Management%20System.pdf)
 
----
+The report is retained alongside the source code as part of the coursework documentation.
 
-## 🏫 Academic Information
+## Acknowledgments and Use
 
-* **Course:** Information Management System Design Practice
-* **University:** Hubei University of Technology
-* **Student Name:** Muntasir Md Fahim (王一然)
-* **Student ID:** 1911521213
+This project was prepared in an academic learning environment, with support from classmates and educational resources. The repository also includes third-party interface libraries, which remain subject to their respective licenses and notices. Any additional identifiable source references can be included as they are confirmed.
 
----
-
-## 📜 License
-
-This project was developed for **academic and educational purposes**.
-It may be used, modified, and extended for learning and non-commercial use, with **proper attribution** to the original author.
-
----
+This repository is shared for **coursework documentation and educational reference**. No new project-wide reuse license is granted here for material whose original permissions have not been established.
