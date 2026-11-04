@@ -67,7 +67,7 @@ The `source code/` directory also contains additional PHP views and forms for ma
 
 - **Course:** Information Management System Design Practice
 - **Institution:** Hubei University of Technology
-- **Student:** Muntasir Md Fahim (王一然)
+- **Student:** Muntasir Md Fahim 
 - **Report:** [File Management System — Academic Report](File%20Management%20System.pdf)
 
 The report is retained alongside the source code as part of the coursework documentation.
